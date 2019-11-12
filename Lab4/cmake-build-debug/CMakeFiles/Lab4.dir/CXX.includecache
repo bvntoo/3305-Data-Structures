@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/3305-Data-Structures/Lab4/set.h
+cstdlib
+-
+iostream
+-
+
+C:/3305-Data-Structures/Lab4/setImp.cpp
+iostream
+-
+algorithm
+-
+cstdlib
+-
+set.h
+C:/3305-Data-Structures/Lab4/set.h
+

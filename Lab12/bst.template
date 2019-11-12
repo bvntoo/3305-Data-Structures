@@ -1,0 +1,182 @@
+#include "bst.h"
+#include <string>
+#include <iostream>
+/**
+    * Add the item to this binary search tree as long as it
+    * is not already present.
+    * Return false if item is already  in the tree.
+    * Return true if item is actually added to the tree.
+    */
+template <class T>
+bool binary_search_tree<T>::insert(const T &item)
+{
+    binary_tree_node<T> *cursor= root;
+
+    if(root==NULL) //first entry
+    {
+        root= new binary_tree_node<T>(item);
+        return true;
+    }
+
+    if(search(item)!=NULL)
+    {
+        return false;
+    }
+    else if(item<cursor->data())
+    {
+        cursor=cursor->left(); //point to the left
+
+        if(cursor!=NULL)
+        { insert(item); }
+        else
+        {
+            cursor= new binary_tree_node<T>(item);//inserts a new node on the left side
+            return true;
+        }
+    }
+    else if(item> cursor->data())
+    {
+        cursor=cursor->right();
+
+        if(cursor!=NULL)
+        { insert(cursor); }
+        else
+        {
+            cursor=new binary_tree_node<T>(item); //inserts a new node on the right side.
+            return true;
+        }
+
+    }
+
+
+//Please implement this function.
+}
+
+/* 
+ * the target value removed -> return true
+ * if not -> return false
+ */
+template <class Item>
+bool bst_remove(binary_tree_node<Item>*& root_ptr, const Item& target)
+{
+    binary_tree_node<Item> *cursor= root_ptr; //cursor
+    binary_tree_node <Item> *pointr;
+
+    if(cursor->data()!=target)
+    {
+        if(cursor->data()>target)
+        {
+            cursor=cursor->left();
+            bst_remove(cursor, target);
+        }
+        else
+        {
+            cursor=cursor->right();
+            bst_remove(cursor,target);
+        }
+    }
+    else
+    {
+
+    }
+
+    return false;
+    //Please implement this function.
+}
+
+template <class Item>
+void bst_remove_max(binary_tree_node<Item>*& root_ptr, Item& removed)
+{
+
+//Please implement this function.
+}
+
+template <class T>
+bool binary_search_tree<T>::remove(const T &item)
+{
+    return bst_remove(root, item);
+}
+
+
+
+
+template <class T>
+binary_tree_node<T> *binary_search_tree<T>::search(const T &key) const {
+    binary_tree_node<T> *p = root;
+    while(p != NULL && p->data() != key) {
+        if(key < p->data())
+            p = p->left();
+        else
+            p = p->right();
+    }
+    return p;
+}
+
+
+template <class T>
+binary_search_tree<T>::~binary_search_tree() {
+    tree_clear(root);
+}
+
+
+
+/**
+ * return the depth of the tree if the tree is balanced.
+ * Return -2 if not. Return -1 if it is an empty tree.
+ */
+template <class T>
+int check_balanced(binary_tree_node<T> *root) {
+    if(root == NULL)
+        return  -1;
+    else {
+        int ibl = check_balanced(root->left());
+        if(ibl == -2)
+            return -2;
+        int ibr = check_balanced(root->right());
+        if(ibr == -2)
+            return -2;
+        if(abs(ibr-ibl) > 1)
+            return -2;
+        if(ibr > ibl)
+            return ibr+1;
+        else
+            return  ibl+1;
+    }
+}
+
+
+/**
+    * return the depth of the tree if the tree is balanced.
+    * Return -2 if not.
+    */
+template <class T>
+int  binary_search_tree<T>::is_balanced()
+{
+    return check_balanced(root);
+}
+
+template <class T>
+std::ostream &operator<<(std::ostream &out, const binary_tree_node<T> *root)
+{
+    if(root != NULL) {
+        out << "[";
+        out << root->left() << " ";
+        out << root->data();
+        out << " " << root->right();
+        out << "]";
+    }
+    return out;
+}
+
+
+
+template <class T>
+std::ostream &operator<<(std::ostream &out, const binary_search_tree<T> &tree)
+{
+    out << tree.root;
+    return out;
+}
+
+
+
+

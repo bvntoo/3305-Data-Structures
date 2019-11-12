@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeLite_Workspace Name="DataStructures Lecture" Database="" Version="10.0.0">
+  <Project Name="Assignment2Codelite" Path="Assignment2Codelite/Assignment2Codelite.project" Active="Yes"/>
+  <Project Name="Assignment2bCodelite" Path="Assignment2bCodelite/Assignment2bCodelite.project"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Debug" Selected="yes">
+      <Environment/>
+      <Project Name="Assignment2Codelite" ConfigName="Debug"/>
+      <Project Name="Assignment2bCodelite" ConfigName="Debug"/>
+    </WorkspaceConfiguration>
+    <WorkspaceConfiguration Name="Release" Selected="yes">
+      <Environment/>
+      <Project Name="Assignment2Codelite" ConfigName="Release"/>
+      <Project Name="Assignment2bCodelite" ConfigName="Release"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix>
+</CodeLite_Workspace>

@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/muhia/OneDrive/Documents/3305-Data-Structures/Lab8/bag5.h
+cstdlib
+-
+node2.h
+C:/Users/muhia/OneDrive/Documents/3305-Data-Structures/Lab8/node2.h
+bag5.template
+C:/Users/muhia/OneDrive/Documents/3305-Data-Structures/Lab8/bag5.template
+
+C:/Users/muhia/OneDrive/Documents/3305-Data-Structures/Lab8/bag5.template
+cassert
+-
+cstdlib
+-
+node2.h
+C:/Users/muhia/OneDrive/Documents/3305-Data-Structures/Lab8/node2.h
+
+C:/Users/muhia/OneDrive/Documents/3305-Data-Structures/Lab8/main.cpp
+iostream
+-
+node2.h
+C:/Users/muhia/OneDrive/Documents/3305-Data-Structures/Lab8/node2.h
+bag5.h
+C:/Users/muhia/OneDrive/Documents/3305-Data-Structures/Lab8/bag5.h
+
+C:/Users/muhia/OneDrive/Documents/3305-Data-Structures/Lab8/node2.h
+cstdlib
+-
+iterator
+-
+node2.template
+C:/Users/muhia/OneDrive/Documents/3305-Data-Structures/Lab8/node2.template
+
+C:/Users/muhia/OneDrive/Documents/3305-Data-Structures/Lab8/node2.template
+cassert
+-
+cstdlib
+-
+

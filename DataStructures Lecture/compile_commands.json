@@ -1,0 +1,29 @@
+[{
+  "file": "C:\\3305-Data-Structures\\DataStructures Lecture\\Assignment2bCodelite\\main.cpp",
+  "directory": "C:\\3305-Data-Structures\\DataStructures Lecture\\Assignment2bCodelite",
+  "command": "clang  -c \"C:\\3305-Data-Structures\\DataStructures Lecture\\Assignment2bCodelite\\main.cpp\" -o \"C:\\3305-Data-Structures\\DataStructures Lecture\\Assignment2bCodelite\\main.cpp\".o -target x86_64-pc-windows-gnu -I. -I.  -g  -O0  -Wall"
+ }, {
+  "file": "C:\\3305-Data-Structures\\Assignment2\\rational.h",
+  "directory": "C:\\3305-Data-Structures\\DataStructures Lecture\\Assignment2Codelite",
+  "command": "clang  -c C:\\3305-Data-Structures\\Assignment2\\rational.h -o C:\\3305-Data-Structures\\Assignment2\\rational.h.o -target x86_64-pc-windows-gnu -I. -I.  -g  -O0  -Wall"
+ }, {
+  "file": "C:\\3305-Data-Structures\\Assignment2\\rationalImp.cpp",
+  "directory": "C:\\3305-Data-Structures\\DataStructures Lecture\\Assignment2Codelite",
+  "command": "clang  -c C:\\3305-Data-Structures\\Assignment2\\rationalImp.cpp -o C:\\3305-Data-Structures\\Assignment2\\rationalImp.cpp.o -target x86_64-pc-windows-gnu -I. -I.  -g  -O0  -Wall"
+ }, {
+  "file": "C:\\3305-Data-Structures\\Assignment2\\main.cpp",
+  "directory": "C:\\3305-Data-Structures\\DataStructures Lecture\\Assignment2Codelite",
+  "command": "clang  -c C:\\3305-Data-Structures\\Assignment2\\main.cpp -o C:\\3305-Data-Structures\\Assignment2\\main.cpp.o -target x86_64-pc-windows-gnu -I. -I.  -g  -O0  -Wall"
+ }, {
+  "file": "C:\\3305-Data-Structures\\Assignment2b\\date.h",
+  "directory": "C:\\3305-Data-Structures\\DataStructures Lecture\\Assignment2Codelite",
+  "command": "clang  -c C:\\3305-Data-Structures\\Assignment2b\\date.h -o C:\\3305-Data-Structures\\Assignment2b\\date.h.o -target x86_64-pc-windows-gnu -I. -I.  -g  -O0  -Wall"
+ }, {
+  "file": "C:\\3305-Data-Structures\\Assignment2b\\main.cpp",
+  "directory": "C:\\3305-Data-Structures\\DataStructures Lecture\\Assignment2Codelite",
+  "command": "clang  -c C:\\3305-Data-Structures\\Assignment2b\\main.cpp -o C:\\3305-Data-Structures\\Assignment2b\\main.cpp.o -target x86_64-pc-windows-gnu -I. -I.  -g  -O0  -Wall"
+ }, {
+  "file": "C:\\3305-Data-Structures\\Assignment2b\\dateImp.cpp",
+  "directory": "C:\\3305-Data-Structures\\DataStructures Lecture\\Assignment2Codelite",
+  "command": "clang  -c C:\\3305-Data-Structures\\Assignment2b\\dateImp.cpp -o C:\\3305-Data-Structures\\Assignment2b\\dateImp.cpp.o -target x86_64-pc-windows-gnu -I. -I.  -g  -O0  -Wall"
+ }]

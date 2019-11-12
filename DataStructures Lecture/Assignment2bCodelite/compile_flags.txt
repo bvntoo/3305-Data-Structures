@@ -1,0 +1,3 @@
+-I"C:\3305-Data-Structures\DataStructures Lecture\Assignment2bCodelite"
+-target
+x86_64-pc-windows-gnu

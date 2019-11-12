@@ -1,0 +1,168 @@
+#include "dequeue.h"
+#include <iostream>
+#include <cstdlib>
+#include <cassert>
+
+
+//static implementation
+
+template <typename T>
+deque<T>::deque()
+{
+    first=last=0;
+    count=0;
+
+}
+
+template <typename T>
+T& deque<T>::front() 
+{
+    assert(empty());
+    return &data[first];
+}
+
+template <typename T>
+T deque<T>::front() const 
+{
+    assert(empty());
+    return data[first];
+}
+
+template <typename T>
+T& deque<T>::back() 
+{
+    assert(!empty());
+    return &data[last];
+}
+
+template <typename T>
+T deque<T>::back() const 
+{
+    assert(empty());
+    return data[first];
+}
+
+template <typename T>
+void deque<T>::push_front(const T &entry) 
+{
+    if(full()) return ;
+
+    if(count!=0)
+    {
+        data[first]=entry;
+    }
+    count++;
+}
+
+template <typename T>
+void deque<T>::push_back(const T &entry) 
+{
+    if(full())
+        return ;
+    if(count==0)
+    {
+        first=last=CAPACITY-1;
+        data[last]=entry;
+        count++;
+    }
+    else
+    {
+        for(int a=CAPACITY-1;a>=0;a--)
+        {
+            data[a-1]=data[a];
+        }
+        data[first]=entry;
+        first--;
+        count++;
+    }
+}
+
+template <typename T>
+void deque<T>::pop_front() 
+{
+    if(full()) return ;
+
+    first= next_index(first);
+    --count;
+}
+
+template <typename T>
+void deque<T>::pop_back() 
+{
+    if(full()) return ;
+
+    last=prev_index(last);
+    --count;
+}
+
+template <typename T>
+size_t deque<T>::size() const 
+{
+    return count;
+}
+
+template <typename T>
+bool deque<T>::empty() const 
+{
+    return (size()==0);
+}
+
+template <typename T>
+bool deque<T>::full() const 
+{
+    return((first==0 && last ==CAPACITY-1) || (first==last+1));
+}
+
+template <typename U>
+bool operator==(const deque<U> &dq1, const deque<U> &dq2)
+{
+    if(dq1.size()!=dq2.size())
+        return false;
+
+    for(size_t a=0; a<dq1.size();a++)
+    {
+        if(dq1.data[a]!=dq2.data[a])
+            return false;
+    }
+    return true;
+}
+
+template <typename U>
+std::ostream& operator<<(std::ostream &out, const deque<U> &dq)
+{
+    for(size_t a=0; a<dq.size();a++)
+    {
+        out<<dq.data[a]<<" ";
+    }
+
+    return out;
+}
+
+template <typename T>
+size_t deque<T>::next_index(size_t i) const 
+{
+    if(count==CAPACITY)
+    {
+        i=0; //assigns 0 to i if capacity reached
+    }
+    else
+    {
+        i++; //return next index in the array
+    }
+
+    return i;
+}
+
+template <typename T>
+size_t deque<T>::prev_index(size_t i) const 
+{
+    if(count==CAPACITY)
+    {
+        i=CAPACITY; //assigns capacity to i when it reaches to 0
+    }
+    else
+    {
+        --i; //returns the previous index array
+    }
+    return i;
+}

@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/muhia/OneDrive/Documents/3305-Data-Structures/Assign2/date.h
+iostream
+-
+
+C:/Users/muhia/OneDrive/Documents/3305-Data-Structures/Assign2/dateImp.cpp
+iostream
+-
+cstdlib
+-
+cassert
+-
+date.h
+C:/Users/muhia/OneDrive/Documents/3305-Data-Structures/Assign2/date.h
+
+C:/Users/muhia/OneDrive/Documents/3305-Data-Structures/Assign2/main.cpp
+iostream
+-
+cstdlib
+-
+cassert
+-
+date.h
+C:/Users/muhia/OneDrive/Documents/3305-Data-Structures/Assign2/date.h
+

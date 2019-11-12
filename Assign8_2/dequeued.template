@@ -1,0 +1,98 @@
+#include "dequeued.h"
+#include <iostream>
+#include <cstdlib>
+//dynamic implementation
+
+template <typename T>
+deque<T>::deque(){ }
+
+template <typename T>
+T& deque<T>::front()
+{
+    return &l.front();
+}
+
+template <typename T>
+T deque<T>::front() const
+{
+    return l.front();
+}
+
+template <typename T>
+T& deque<T>::back()
+{
+    return &l.back();
+}
+
+template <typename T>
+T deque<T>::back() const
+{
+    return l.back();
+}
+
+template <typename T>
+void deque<T>::push_front(const T &entry)
+{
+    l.push_front(entry);
+}
+
+template <typename T>
+void deque<T>::push_back(const T &entry)
+{
+    l.push_back();
+}
+
+template <typename T>
+void deque<T>::pop_front()
+{
+    l.pop_front();
+}
+
+template <typename T>
+void deque<T>::pop_back()
+{
+    l.pop_back();
+}
+
+template <typename T>
+size_t deque<T>::size() const
+{
+    return l.size();
+}
+
+template <typename T>
+bool deque<T>::empty() const
+{
+    return l.empty();
+}
+
+template <typename U>
+bool operator==(const deque<U> &dq1, const deque<U> &dq2)
+{
+    if(dq1.size()!=dq2.size())
+    {
+        return false;
+    }
+
+    //template <typename T>
+    for(typename std::list<U>::iterator a= dq1.l.begin(); a!=dq1.l.end(); ++a)
+    {
+        typename std::list<U>::iterator b=dq2.l.begin();
+        if(a!=b)
+            return false;
+    }
+
+    return true;
+}
+
+template <typename U>
+std::ostream& operator<<(std::ostream &out, const deque<U> &dq)
+{
+
+    for(typename std::list<U>::iterator a= dq.l.begin(); a!=dq.l.end(); ++a)
+    {
+        out<<a<<" ";
+    }
+
+    return out;
+}

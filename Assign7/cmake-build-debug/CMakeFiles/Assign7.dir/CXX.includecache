@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/bvntoo/OneDrive/Documents/3305-Data-Structures/Assign7/main.cpp
+setb.h
+C:/Users/bvntoo/OneDrive/Documents/3305-Data-Structures/Assign7/setb.h
+cassert
+-
+iostream
+-
+
+C:/Users/bvntoo/OneDrive/Documents/3305-Data-Structures/Assign7/node1.h
+cstdlib
+-
+
+C:/Users/bvntoo/OneDrive/Documents/3305-Data-Structures/Assign7/setb.h
+cstdlib
+-
+iostream
+-
+node1.h
+C:/Users/bvntoo/OneDrive/Documents/3305-Data-Structures/Assign7/node1.h
+setb.template
+C:/Users/bvntoo/OneDrive/Documents/3305-Data-Structures/Assign7/setb.template
+
+C:/Users/bvntoo/OneDrive/Documents/3305-Data-Structures/Assign7/setb.template
+iostream
+-
+cassert
+-
+setb.h
+C:/Users/bvntoo/OneDrive/Documents/3305-Data-Structures/Assign7/setb.h
+cstdlib
+-
+

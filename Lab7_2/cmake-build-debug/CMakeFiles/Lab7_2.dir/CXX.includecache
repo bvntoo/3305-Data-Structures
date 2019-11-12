@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/muhia/OneDrive/Documents/3305-Data-Structures/Lab7_2/check_lists.cpp
+check_lists.h
+C:/Users/muhia/OneDrive/Documents/3305-Data-Structures/Lab7_2/check_lists.h
+cassert
+-
+iostream
+-
+
+C:/Users/muhia/OneDrive/Documents/3305-Data-Structures/Lab7_2/check_lists.h
+node1.h
+C:/Users/muhia/OneDrive/Documents/3305-Data-Structures/Lab7_2/node1.h
+
+C:/Users/muhia/OneDrive/Documents/3305-Data-Structures/Lab7_2/main.cpp
+
+C:/Users/muhia/OneDrive/Documents/3305-Data-Structures/Lab7_2/node1.cpp
+node1.h
+C:/Users/muhia/OneDrive/Documents/3305-Data-Structures/Lab7_2/node1.h
+cassert
+-
+cstdlib
+-
+
+C:/Users/muhia/OneDrive/Documents/3305-Data-Structures/Lab7_2/node1.h
+cstdlib
+-
+

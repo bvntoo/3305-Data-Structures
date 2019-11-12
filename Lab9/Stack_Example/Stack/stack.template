@@ -1,0 +1,44 @@
+#include "stack.h"
+#include <cassert>
+
+template <class T>
+stack<T>::stack() {
+    size = 0;
+}
+
+
+/*
+     * Insert an element into the stack
+     */
+template <class T>
+void stack<T>::push(T element) {
+    assert(!isFull());
+    data[size] = element;
+    size++;
+}
+
+/**
+ * Remove an element from the stack and return it
+ */
+template <class T>
+T stack<T>::pop() {
+    assert(!isEmpty());
+//    T e = data[size-1];
+//    size--;
+//    return e;
+    size--;
+    return data[size];
+}
+
+
+template <class T>
+bool stack<T>::isEmpty() const {
+    return size == 0;
+}
+
+template <class T>
+bool stack<T>::isFull() const {
+    return size == CAPACITY;
+}
+
+

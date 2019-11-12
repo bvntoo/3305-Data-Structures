@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/3305-Data-Structures/Lab3/stats2.h
+
+C:/3305-Data-Structures/Lab3/statsImp.cpp
+iostream
+-
+cstdlib
+-
+cmath
+-
+string.h
+-
+stats2.h
+C:/3305-Data-Structures/Lab3/stats2.h
+
+C:/3305-Data-Structures/Lab3/statsexamp2.cpp
+iostream
+-
+cstdlib
+-
+cmath
+-
+string.h
+-
+stats2.h
+C:/3305-Data-Structures/Lab3/stats2.h
+

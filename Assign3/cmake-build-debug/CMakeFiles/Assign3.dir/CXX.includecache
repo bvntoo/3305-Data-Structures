@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/3305-Data-Structures/Assign3/main.cpp
+set.h
+C:/3305-Data-Structures/Assign3/set.h
+cassert
+-
+iostream
+-
+
+C:/3305-Data-Structures/Assign3/set.h
+cstdlib
+-
+iostream
+-
+

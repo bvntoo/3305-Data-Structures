@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/muhia/OneDrive/Documents/3305-Data-Structures/Assign8/dequeue.h
+iostream
+-
+cstdlib
+-
+dequeue.template
+C:/Users/muhia/OneDrive/Documents/3305-Data-Structures/Assign8/dequeue.template
+
+C:/Users/muhia/OneDrive/Documents/3305-Data-Structures/Assign8/dequeue.template
+dequeue.h
+C:/Users/muhia/OneDrive/Documents/3305-Data-Structures/Assign8/dequeue.h
+iostream
+-
+cstdlib
+-
+cassert
+-
+
+C:/Users/muhia/OneDrive/Documents/3305-Data-Structures/Assign8/main.cpp
+iostream
+-
+dequeue.h
+C:/Users/muhia/OneDrive/Documents/3305-Data-Structures/Assign8/dequeue.h
+

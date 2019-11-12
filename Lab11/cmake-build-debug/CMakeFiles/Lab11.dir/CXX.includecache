@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/muhia/OneDrive/Documents/3305-Data-Structures/Lab11/bintree.h
+cstdlib
+-
+bintree.template
+C:/Users/muhia/OneDrive/Documents/3305-Data-Structures/Lab11/bintree.template
+
+C:/Users/muhia/OneDrive/Documents/3305-Data-Structures/Lab11/bintree.template
+cassert
+-
+cstdlib
+-
+iomanip
+-
+iostream
+-
+
+C:/Users/muhia/OneDrive/Documents/3305-Data-Structures/Lab11/build_tree.h
+bintree.h
+C:/Users/muhia/OneDrive/Documents/3305-Data-Structures/Lab11/bintree.h
+
+C:/Users/muhia/OneDrive/Documents/3305-Data-Structures/Lab11/main.cpp
+bintree.h
+C:/Users/muhia/OneDrive/Documents/3305-Data-Structures/Lab11/bintree.h
+build_tree.h
+C:/Users/muhia/OneDrive/Documents/3305-Data-Structures/Lab11/build_tree.h
+iostream
+-
+

@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/3305-Data-Structures/Lab5/sequence.h
+cstdlib
+-
+
+C:/3305-Data-Structures/Lab5/sequence2Imp.cpp
+sequence.h
+C:/3305-Data-Structures/Lab5/sequence.h
+iostream
+-
+cassert
+-
+cstdlib
+-
+
